@@ -41,6 +41,11 @@ const Game: React.FC = () => {
 
   const { squares, xIsNext, stepNumber, moves } = history;
 
+  console.log('squares', squares)
+  console.log('xIsNext', xIsNext)
+  console.log('stepNumber', stepNumber)
+  console.log('moves', moves)
+
   const [winner, winnerMoves] = calculateWinner(squares[stepNumber]);
 
   const status = winner
